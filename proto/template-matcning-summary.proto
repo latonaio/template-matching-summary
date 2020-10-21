@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "google/protobuf/struct.proto";
+option java_multiple_files = true;
+
+package templatematchingSummary;
+
+
+service TemplateMatchingSummary {
+  rpc get_matching_summary(SummaryRequest) returns (SummaryResponse) {}
+}
+
+message SummaryRequest {
+    google.protobuf.Struct matching_data = 1;
+}
+
+message SummaryResponse {
+    google.protobuf.Struct summary_data = 1;
+}

@@ -1,0 +1,4 @@
+
+
+class TemplateMatchingSummaryError(Exception):
+    pass

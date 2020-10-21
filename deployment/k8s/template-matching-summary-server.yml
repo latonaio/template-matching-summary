@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: template-matching-summary-server
+spec:
+  selector:
+    matchLabels:
+      app: template-matching-summary-server
+  template:
+    metadata:
+      labels:
+        app: template-matching-summary-server
+    spec:
+      containers:
+      - name: template-matching-summary-server
+        imagePullPolicy: IfNotPresent
+        image: latonaio/template-matching-summary-server:latest
+        env:
+          - name: CURRENT_DEVICE_NAME
+            value: tartarus
+        resources: {}
+        ports:
+        - containerPort: 50052
+        volumeMounts:
+          - name: scripts
+            mountPath: /var/lib/aion/Runtime/template-matching-summary-server
+      volumes:
+        - name: scripts
+          hostPath:
+            path: /home/latona/workspace/template-matching-summary/server
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: template-matching-summary-server
+spec:
+  selector:
+    app: template-matching-summary-server
+  type: NodePort
+  ports:
+  - port: 50052
+    targetPort: 50052
+    nodePort: 30052
+

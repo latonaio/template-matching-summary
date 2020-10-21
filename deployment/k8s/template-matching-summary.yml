@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: template-matching-summary
+spec:
+  selector:
+    matchLabels:
+      app: template-matching-summary
+  template:
+    metadata:
+      labels:
+        app: template-matching-summary
+    spec:
+      containers:
+      - name: template-matching-summary
+        imagePullPolicy: IfNotPresent
+        image: latonaio/template-matching-summary:latest
+        command:
+          - /bin/sh
+          - -c
+          - "while :; do sleep 10; done"
+        env:
+          - name: SERVER_HOST
+            value: template-matching-summary-server
+          - name: SERVER_PORT
+            value: "50052"
+          - name: CONNECTION_MODE
+            value: direct
+          - name: CURRENT_DEVICE_NAME
+            value: tartarus
+        resources:
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
+        volumeMounts:
+          - name: scripts
+            mountPath: /var/lib/aion/Runtime/template-matching-summary
+      volumes:
+        - name: scripts
+          hostPath:
+            path: /home/latona/workspace/template-matching-summary/client

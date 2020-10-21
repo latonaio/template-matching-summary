@@ -1,0 +1,460 @@
+{
+    "nextServiceList": [{
+        "nextServiceName": "TemplateMatchingSequentialSummary",
+        "nextDirectoryOfService": "/home/latona/tartarus/Runtime/template-matching-sequential-summary/",
+        "nextRuntime": {
+            "type": "python",
+            "run": "main.py"
+        },
+        "nextServiceDevice": "deneb"
+    }],
+    "priorServiceName": "TemplateMatchingByOpenCV",
+    "priorDirectoryOfService": "/home/latona/deneb/Runtime/template-matching-by-opencv",
+    "priorRuntime": {
+        "type": "python",
+        "run": "main.py"
+    },
+    "transactionCodes": {
+        "transactionCode2": "",
+        "transactionCode1": "",
+        "transactionCode0": ""
+    },
+    "inputFileName": "/home/latona/deneb/Data/template-matching-by-opencv/A_20200205054518793855_TemplateMatchingByOpenCV.json",
+    "inputHeader": {
+        "type": "file",
+        "content": "output-json"
+    },
+    "outputHeader": {
+        "type": "",
+        "content": ""
+    },
+    "outputFileName": "",
+    "priorServiceDevice": "deneb",
+    "startAt": null,
+    "finishAt": null,
+    "metadata": [
+        {
+            "key": "matching_data",
+            "value": [
+                {
+                    "input_path": "/home/latona/tartarus/Data/real-time-video-streaming/file/output/20200313110239073.jpg",
+                    "output_path": "/home/latona/tartarus/Data/template-matching-by-opencv/file/output/20200313110239073.jpg",
+                    "templates": [
+                        {
+                            "matching_rate": 0.34295061230659485,
+                            "matching_points": {
+                                "x": 288,
+                                "y": 0,
+                                "w": 42,
+                                "h": 202
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 1,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.2663125693798065,
+                            "matching_points": {
+                                "x": 390,
+                                "y": 261,
+                                "w": 237,
+                                "h": 195
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 2,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.39313021302223206,
+                            "matching_points": {
+                                "x": 378,
+                                "y": 61,
+                                "w": 41,
+                                "h": 246
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 3,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3046722412109375,
+                            "matching_points": {
+                                "x": 895,
+                                "y": 614,
+                                "w": 385,
+                                "h": 106
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 16,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.35766664147377014,
+                            "matching_points": {
+                                "x": 742,
+                                "y": 465,
+                                "w": 538,
+                                "h": 65
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 17,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3488532304763794,
+                            "matching_points": {
+                                "x": 828,
+                                "y": 417,
+                                "w": 64,
+                                "h": 78
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 18,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.30824875831604004,
+                            "matching_points": {
+                                "x": 534,
+                                "y": 362,
+                                "w": 481,
+                                "h": 55
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 19,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.297068327665329,
+                            "matching_points": {
+                                "x": 416,
+                                "y": 94,
+                                "w": 76,
+                                "h": 269
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 4,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.4075850546360016,
+                            "matching_points": {
+                                "x": 427,
+                                "y": 206,
+                                "w": 101,
+                                "h": 264
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 5,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.2931431829929352,
+                            "matching_points": {
+                                "x": 444,
+                                "y": 102,
+                                "w": 54,
+                                "h": 237
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 6,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.2668558955192566,
+                            "matching_points": {
+                                "x": 534,
+                                "y": 135,
+                                "w": 94,
+                                "h": 247
+                            },
+                            "vehicle_id": 3,
+                            "vehicle_name": "LS",
+                            "template_id": 7,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.16574521362781525,
+                            "matching_points": {
+                                "x": 513,
+                                "y": 364,
+                                "w": 122,
+                                "h": 99
+                            },
+                            "vehicle_id": 3,
+                            "vehicle_name": "LS",
+                            "template_id": 8,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3024054169654846,
+                            "matching_points": {
+                                "x": 456,
+                                "y": 329,
+                                "w": 211,
+                                "h": 46
+                            },
+                            "vehicle_id": 3,
+                            "vehicle_name": "LS",
+                            "template_id": 9,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.10605977475643158,
+                            "matching_points": {
+                                "x": 377,
+                                "y": 436,
+                                "w": 248,
+                                "h": 44
+                            },
+                            "vehicle_id": 4,
+                            "vehicle_name": "NX_CONV",
+                            "template_id": 10,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.25105729699134827,
+                            "matching_points": {
+                                "x": 491,
+                                "y": 395,
+                                "w": 150,
+                                "h": 171
+                            },
+                            "vehicle_id": 4,
+                            "vehicle_name": "NX_CONV",
+                            "template_id": 11,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.2248632162809372,
+                            "matching_points": {
+                                "x": 281,
+                                "y": 416,
+                                "w": 334,
+                                "h": 47
+                            },
+                            "vehicle_id": 4,
+                            "vehicle_name": "NX_CONV",
+                            "template_id": 12,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.17562732100486755,
+                            "matching_points": {
+                                "x": 417,
+                                "y": 230,
+                                "w": 240,
+                                "h": 119
+                            },
+                            "vehicle_id": 5,
+                            "vehicle_name": "NX_HV",
+                            "template_id": 13,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.09372695535421371,
+                            "matching_points": {
+                                "x": 284,
+                                "y": 407,
+                                "w": 414,
+                                "h": 72
+                            },
+                            "vehicle_id": 5,
+                            "vehicle_name": "NX_HV",
+                            "template_id": 14,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.35679319500923157,
+                            "matching_points": {
+                                "x": 706,
+                                "y": 369,
+                                "w": 110,
+                                "h": 154
+                            },
+                            "vehicle_id": 5,
+                            "vehicle_name": "NX_HV",
+                            "template_id": 15,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        }
+                    ]
+                },
+                {
+                    "input_path": "/home/latona/tartarus/Data/real-time-video-streaming/file/output/20200313110239174.jpg",
+                    "output_path": "/home/latona/tartarus/Data/template-matching-by-opencv/file/output/20200313110239174.jpg",
+                    "templates": [
+                        {
+                            "matching_rate": 0.20954813957214355,
+                            "matching_points": {
+                                "x": 290,
+                                "y": 0,
+                                "w": 42,
+                                "h": 202
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 1,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.2775833308696747,
+                            "matching_points": {
+                                "x": 390,
+                                "y": 245,
+                                "w": 237,
+                                "h": 195
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 2,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3888510763645172,
+                            "matching_points": {
+                                "x": 372,
+                                "y": 33,
+                                "w": 41,
+                                "h": 246
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 3,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.30388039350509644,
+                            "matching_points": {
+                                "x": 895,
+                                "y": 614,
+                                "w": 385,
+                                "h": 106
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 16,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3597794771194458,
+                            "matching_points": {
+                                "x": 742,
+                                "y": 463,
+                                "w": 538,
+                                "h": 65
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 17,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.34880876541137695,
+                            "matching_points": {
+                                "x": 828,
+                                "y": 417,
+                                "w": 64,
+                                "h": 78
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 18,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3093503713607788,
+                            "matching_points": {
+                                "x": 565,
+                                "y": 91,
+                                "w": 481,
+                                "h": 55
+                            },
+                            "vehicle_id": 1,
+                            "vehicle_name": "IS_2WD",
+                            "template_id": 19,
+                            "is_car_end": 1,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.99715797305107117,
+                            "matching_points": {
+                                "x": 412,
+                                "y": 57,
+                                "w": 76,
+                                "h": 269
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 4,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.4274243116378784,
+                            "matching_points": {
+                                "x": 427,
+                                "y": 205,
+                                "w": 101,
+                                "h": 264
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 5,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        },
+                        {
+                            "matching_rate": 0.3258763551712036,
+                            "matching_points": {
+                                "x": 434,
+                                "y": 62,
+                                "w": 54,
+                                "h": 237
+                            },
+                            "vehicle_id": 2,
+                            "vehicle_name": "IS_4WD",
+                            "template_id": 6,
+                            "is_car_end": 0,
+                            "pass_threshold": 0.8
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
